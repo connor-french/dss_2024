@@ -1,5 +1,15 @@
 project:
-  title: "dss_2024"
-
+  type: default
 editor: visual
 
+format:
+  gfm: default
+  pdf:
+    documentclass: article
+    colorlinks: true
+
+    
+    
+    
+    
+  
