@@ -1,9 +1,5 @@
 ---
 title: "Lab Introduction"
-format:
-  docx: 
-    fig-width: 3
-    fig-asp: 1.618
 ---
 
 ## Who I am
