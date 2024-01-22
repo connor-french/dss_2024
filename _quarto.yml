@@ -3,10 +3,13 @@ project:
 editor: visual
 
 format:
-  gfm: default
-  pdf:
-    documentclass: article
-    colorlinks: true
+  gfm: 
+    fig-width: 3
+    fig-asp: 1.618
+  docx: 
+    fig-width: 3
+    fig-asp: 1.618
+    
 
     
     

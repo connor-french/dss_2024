@@ -1,5 +1,9 @@
 ---
 title: "Lab Introduction"
+format:
+  docx: 
+    fig-width: 3
+    fig-asp: 1.618
 ---
 
 ## Who I am
@@ -14,9 +18,13 @@ I study how populations, species, and communities evolve in response to changing
 
 I use a combination of field work, lab work, and computational work to answer the questions I'm interested in. Because fossils are few and far between, I sequence the DNA of lizards and frogs across their current geographic ranges to understand their pasts. DNA contains the history of an organism's ancestry, and even can tell us the history of entire populations- how a population may have shrank or expanded in the past and whether they exchanged migrants with other populations. After I have collected the organisms in the field and sequenced their DNA in the lab, I analyze the data on a computer. I use everything from my personal laptop to a super computer at the American Museum of Natural History to run my analyses. I use a combination of statistics, machine learning, and simulations to tease apart the potential ecological and evolutionary forces driving the patterns that I observe.
 
+
 ![A photo of a waxy monkey tree frog I sampled in the field in the Brazilian Atlantic Forest.](images/phyllomedusa.jpg){fig-alt="A waxy monkey tree frog grasping a branch."}
 
 ![Typical habitat that I conduct field work in. A fragment of tropical forest on the edge of agricultural land in the Brazilian Atlantic Forest.](images/fieldwork-habitat.jpg){fig-alt="Edge of a tropical forest fragment seen from atop a hill."}
+
+
+
 
 #### Data
 
