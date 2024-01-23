@@ -4,11 +4,11 @@ editor: visual
 
 format:
   gfm: 
-    fig-width: 3
-    fig-asp: 1.618
+    footer: | 
+      Excel materials inspired or sourced from [W3Schools](https://www.w3schools.com/). Lab materials inspired by [Data Nuggets](https://datanuggets.org/).
   docx: 
-    fig-width: 3
-    fig-asp: 1.618
+    footer: | 
+      Excel materials inspired or sourced from [W3Schools](https://www.w3schools.com/). Lab materials inspired by [Data Nuggets](https://datanuggets.org/).
     
 
     

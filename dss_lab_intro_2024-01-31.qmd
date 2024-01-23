@@ -14,29 +14,62 @@ I study how populations, species, and communities evolve in response to changing
 
 I use a combination of field work, lab work, and computational work to answer the questions I'm interested in. Because fossils are few and far between, I sequence the DNA of lizards and frogs across their current geographic ranges to understand their pasts. DNA contains the history of an organism's ancestry, and even can tell us the history of entire populations- how a population may have shrank or expanded in the past and whether they exchanged migrants with other populations. After I have collected the organisms in the field and sequenced their DNA in the lab, I analyze the data on a computer. I use everything from my personal laptop to a super computer at the American Museum of Natural History to run my analyses. I use a combination of statistics, machine learning, and simulations to tease apart the potential ecological and evolutionary forces driving the patterns that I observe.
 
+![A photo of a waxy monkey tree frog I sampled in the field in the Brazilian Atlantic Forest.](images/phyllomedusa.jpg){fig-alt="A waxy monkey tree frog grasping a branch." fig-align="center" width=40%}
 
-![A photo of a waxy monkey tree frog I sampled in the field in the Brazilian Atlantic Forest.](images/phyllomedusa.jpg){fig-alt="A waxy monkey tree frog grasping a branch."}
-
-![Typical habitat that I conduct field work in. A fragment of tropical forest on the edge of agricultural land in the Brazilian Atlantic Forest.](images/fieldwork-habitat.jpg){fig-alt="Edge of a tropical forest fragment seen from atop a hill."}
-
-
-
+![Typical habitat that I conduct field work in. A fragment of tropical forest on the edge of agricultural land in the Brazilian Atlantic Forest.](images/fieldwork-habitat.jpg){fig-alt="Edge of a tropical forest fragment seen from atop a hill." width=40%}
 
 #### Data
 
-In addition to DNA sequences, I use ecological information to inform my analyses. I aggregate records of where the lizards or frogs I study
+In addition to DNA sequences, I use ecological information to inform my analyses. I aggregate records of where the lizards or frogs I study have been observed and used that to obtain ecological information from online databases. For instance, if I want to get a broad understanding of the environmental tolerances of the tree frogs I study, I take the locations where they have been observed, extract the average annual temperature and precipitation of these locations from the online database, and summarize those values using measurements like the average or spread of those values. I can compare these ecological measurements between species or populations to see how their ecological tolerances differ and how they might change over time!
+
+Here's an illustration of the process:
+
+![The geographic study area is indicated with the black outline, while the observed localities of two frog species are indicated with the symbols. I can download temperature and precipitation for the study area from a database and extract those values for the observed localities to get an idea of differences in environmental tolerances for the two species.](images/data-collection-schematic.png){fig-alt="Schematic of ecological data collection."}
+
+It looks like frog species A likes it a bit cooler and wetter than frog species B!
 
 ## Purpose of the lab
 
-\(2\) use exploration and experiential problem-solving to become familiar with how scientists ask questions, collect data, and analyze it to further knowledge; and 3) develop core technological skills in Microsoft Excel and the statistical programming language R to kick-start their success in future science courses and labs and research endeavors
+The lab portion of the course is mainly devoted to goals (2) and (3) from the syllabus:
+
+> \(2\) use exploration and experiential problem-solving to become familiar with how scientists ask questions, collect data, and analyze it to further knowledge; and 3) develop core technological skills in Microsoft Excel and the statistical programming language R to kick-start their success in future science courses and labs and research endeavors
+
+We will use real data from the scientists you meet during the lecture portion to satisfy these goals!
 
 ## Learning outcomes
 
-## Semester outline
+What you tackle during the lab will contribute to all of the learning outcomes stated in the syllabus.
+
+> |                                                                                               |
+> |-----------------------------------------------------------------------------------------------|
+> | 1\. Explain how undertaking biological research differs from studying biology in a classroom. |
+> | 2\. Understand the diverse backgrounds from which scientists come.                            |
+> | 3\. Understand advanced functions of Microsoft Excel.                                         |
+> | 4\. Manipulate data and undertake analysis in the R statistical computing language.           |
 
 ## How a lab will typically go
 
-## Excel introduction
+Labs will have a "Data Science" section and an "Excel/R" section. The Data Science section will cover research methods, scientific techniques, and feedback on your group projects (we will go over your group projects next week!). The Excel/R section will familiarize you with the two pieces of software and cover hands-on data recording and analysis using real data from the presenters!
+
+Each week will involve working through a research question involving data from that week's presenter, where you will evaluate or ask your own scientific question, form hypotheses, investigate research data, visualize and analyze the data, and interpret your analyses. The lab will focus on particular Data Science and Excel/R concepts specific to that week.
+
+## Semester outline
+
+We have a tentative schedule for what the lab will cover, but it is subject to change depending on how I feel y'all are progressing. This is the first time this class is being taught, so I will be learning from you just like you will be learning from me!
+
+*Insert "finalized" syllabus schedule here*
+
+# Excel introduction
+
+## Installation
+
+If you do not have installed Microsoft Office 365 installed on your computer, follow [City College's instructions](https://www.ccny.cuny.edu/it/microsoft-office-365-students) to install the latest version (for free).
+
+## What is Excel?
+
+## Why use Excel?
+
+# Experiment basics
 
 ## What are the components of an experiment?
 
