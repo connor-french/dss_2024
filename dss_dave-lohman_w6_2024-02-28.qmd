@@ -1,0 +1,135 @@
+---
+title: "Butterflies in the rainforest"
+---
+
+```{r}
+library(tidyverse)
+
+theme_set(theme_bw())
+
+```
+
+#### Featured scientists
+
+[Dr. David Lohman](https://lohman.ccny.cuny.edu/)
+
+### Research Background
+
+Rainforests are complex ecosystems that support an incredible diversity of life. This diversity is evident not only as you walk through the forest, but as you climb. The forest is *stratified*, meaning that the organisms you see change as you climb up and down the forest ecosystem. The four *strata* in a rainforest are the emergent layer, the canopy, the understory, and the forest floor.
+
+The emergent layer is composed of the tallest trees that tower above the rest of the forest. They stick out, vulnerable to the often violent weather. Plants and animals adapted to this strata must be able to withstand intense light, shifts from rain storms to dryness, and blustering wind. Due to this harsh environment, diversity is lower than the other strata, although the organisms' adaptations can be marvelous.
+
+![](images/clipboard-1260973711.png){fig-alt="Image of the emergent layer of a rainforest. Source: https://www.arborday.org/programs/rainforest/layers-of-the-rain-forest.cfm"}
+
+The canopy is the thick layer of greenery below the emergent layer. On average about 20 feet thick, it shields its inhabitants from the intense weather fluctuations that batter the emergent layer. Sunlight enters through tiny openings, scattering across the lower strata, resulting in dim, rather than brilliant light. Rain is reduced to fine droplets and sheets pouring down tree trunks and wind is almost non-existent except for forest openings. The canopy contains the most species of the four strata, where plants, animals, and fungi form intricate relationships with each other. Trees and flowering plants require animals for dispersal rather than wind, resulting in at least some species flowering at any point of the year. While many charismatic vertebrates inhabit the canopy, like toucans and howler monkeys, the vast majority of animal species in the canopy are insects. Hundreds of species of beetles can be found on a single tree!
+
+![](images/clipboard-3839890997.png){fig-alt="View from the side of a rainforest canopy. Source: https://www.daveshowalter.com/photo/rainforest-canopy/"}
+
+The understory is made up of young and short trees, shrubs, and plants without woody stems. It is even more dim than the canopy, forcing flowering plants to use more extreme methods to attract pollinators- larger, paler flowers and intense fragrances from sweet to smelly. Less dense vegetation allows for flying animals to move more freely. This also attracts their predators, which include tree frogs hunting flies and spiders catching birds! Frogs enjoy the higher humidity, which provides a suitable environment for their gelatinous eggs to develop.
+
+![](images/clipboard-4095404383.png){fig-alt="Photo looking up from the ground into a rainforest understory. Source: http://pictures.butlernature.com/cambodia/images/cambodia_161412.html"}
+
+The forest floor is very dark- a tiny fraction of light from the emergent layer makes it all the way down. Organisms adapted to obtaining their nutrition from decaying matter thrive here- fungi, plants, and an abundance of leaf-litter insects. Foraging animals like peccaries and armadillos root through the detritus, eating plant tubers and insects. Their predators lurk in the shadows- jaguars and cayman stalk their unsuspecting prey until the right moment.
+
+Butterflies occupy all four strata, with brilliant blue morphos fluttering above the emergent layer, fruit-feeding nymphalids traversing the canopy and understory, and low-flying Haertini cruising above the forest floor.
+
+::: {#fig-butterflies layout-ncol="2"}
+![Blue morpho](images/clipboard-360834659.png){fig-alt="Blue morpho butterfly in flight. Source: https://i2.wp.com/www.costaricajourneys.com/wp-content/uploads/2012/02/Blue-Marphos-of-tropical-forest.jpg" width="10cm"}
+
+![Haertera piera (Haertini)](images/clipboard-2082174532.png){fig-alt="Haertera piera butterfly with translucent wings resting on the forest floor. Source: https://www.learnaboutbutterflies.com/Amazon-Haeterapiera.html" width="10cm"}
+:::
+
+The outstanding diversity of butterflies (over 18,700 species worldwide!) is evident at all rainforest strata, although their diversity is most pronounced in the canopy and the understory. While the canopy and understory are close together, many species are restricted to one stratum or the other. Butterflies are adapted to the unique ecological characteristics of the strata. For instance, an abundance of nectar-rich flowers in the canopy will attract certain butterflies, while an abundance of shelter and prey in the understory may attract others.
+
+Dr. David Lohman and his colleagues are interested in understanding the evolutionary relationships of butterflies and the evolution of their ecological traits. The stark differences in the number of species and their abundance across rainforest strata provide the opportunity to understand *why* these differences occur. Over the course of three years of field work in Thailand rainforests, Dr. Lohman and colleagues trapped butterflies in the canopy and understory. In addition to counting and classifying the butterflies they trapped, they collected weather data for each trap, noting aspects of the temperature, humidity, rainfall, and more about each trap and when it was sampled. A portion of these data are summarized in the section ***Scientific Data*** below.
+
+### Scientific questions
+
+Q1: Are butterflies more abundant in the canopy or the understory?
+
+Q2: What aspects of the environment influence butterfly abundance?
+
+### Scientific Data
+
+```{r}
+#| label: data
+
+d <- read_csv("data/w2_thai_butterflies_small.csv") 
+
+colnames(d) <- c("Stratum", "Temp. (Cº)", "% humidity", "Cloud cover", "# individuals")
+
+d_names <- d %>% 
+  select(-`Cloud cover`) %>% 
+  mutate(
+    Stratum = if_else(Stratum == "C", "Canopy", "Understory"),
+    # `Cloud cover` = case_when(
+    #   `Cloud cover` == "O" ~ "Overcast",
+    #   `Cloud cover` == "C" ~ "Clear",
+    #   `Cloud cover` == "PC" ~ "Partly Cloudy"
+   # )
+  )
+
+d_names
+```
+
+Which data will you need to answer Q1?
+
+Independent variable(s):\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Dependent variable(s):\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Here is a relevant graph to answer Q1:
+
+```{r}
+#| label: q1-plot
+
+d_names %>% 
+  ggplot(aes(x = Stratum, y = `# individuals`)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.2)
+
+```
+
+Which data will you need to answer Q2?
+
+Independent variable(s):\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Dependent variable(s):\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Here are a couple graphs relevant to Q2:
+
+```{r}
+#| label: q2-plots
+#| layout-ncol: 2
+#| column: page
+
+d_names %>% 
+  ggplot(aes(x = `Temp. (Cº)`, y = `# individuals`, color = Stratum)) +
+  geom_point() + 
+  geom_smooth(method = "lm", se=FALSE) +
+  scale_color_manual(values = c("darkgreen", "sienna"))
+
+d_names %>% 
+  ggplot(aes(x = `% humidity`, y = `# individuals`, color = Stratum)) +
+  geom_point() + 
+  geom_smooth(method = "lm", se=FALSE) +
+  scale_color_manual(values = c("darkgreen", "sienna"))
+
+
+```
+
+### Interpret the data
+
+-   make a claim that answers the scientific question
+-   What evidence was used to write your claim?
+-   Explain your reasoning and why the evidence supports your claim
+
+### Next steps as a scientist
+
+-   Science is an ongoing process. What new question do you think should be investigated?
+-   What future data should be collected to answer your question?
+    -   Independent variables/dependent variables
+-   For each variable, explain why you included it and how it could be measured
+-   What hypothesis are you testing in your experiment?
+
+Excel materials inspired or sourced from [W3Schools](https://www.w3schools.com/). Lab materials inspired by [Data Nuggets](https://datanuggets.org/).

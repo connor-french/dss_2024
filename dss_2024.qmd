@@ -27,3 +27,5 @@ title: "dss_2024 template"
     -   Independent variables/dependent variables
 -   For each variable, explain why you included it and how it could be measured
 -   What hypothesis are you testing in your experiment?
+
+Excel materials inspired or sourced from [W3Schools](https://www.w3schools.com/). Lab materials inspired by [Data Nuggets](https://datanuggets.org/).

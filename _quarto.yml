@@ -3,13 +3,15 @@ project:
 editor: visual
 
 format:
-  gfm: 
-    footer: | 
-      Excel materials inspired or sourced from [W3Schools](https://www.w3schools.com/). Lab materials inspired by [Data Nuggets](https://datanuggets.org/).
   docx: 
-    footer: | 
-      Excel materials inspired or sourced from [W3Schools](https://www.w3schools.com/). Lab materials inspired by [Data Nuggets](https://datanuggets.org/).
-    
+    df-print: kable
+  gfm: 
+    df-print: kable
+
+execute: 
+  echo: false
+  warning: false
+  error: false
 
     
     
