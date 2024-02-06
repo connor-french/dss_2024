@@ -75,7 +75,6 @@ d
 
 ```{r}
 #| label: sample-locality-map
-#| fig-width: 0.4
 #| fig-cap: "Geographical distribution of sampling locations in the United States. States with study sites are indicated in red."
 
 us_states <- rnaturalearth::ne_states(country = "united states of america", returnclass = "sf") %>% 
