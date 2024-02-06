@@ -1,5 +1,7 @@
 ---
 title: "dss_2024 template"
+tbl-cap-location: top
+fig-cap-location: bottom
 ---
 
 #### Featured scientists
@@ -27,5 +29,7 @@ title: "dss_2024 template"
     -   Independent variables/dependent variables
 -   For each variable, explain why you included it and how it could be measured
 -   What hypothesis are you testing in your experiment?
+
+## [Weekly Feedback Form](https://forms.gle/RCWtYoAtQGNd8JL38)
 
 Excel materials inspired or sourced from [W3Schools](https://www.w3schools.com/). Lab materials inspired by [Data Nuggets](https://datanuggets.org/).

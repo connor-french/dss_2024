@@ -1,5 +1,7 @@
 ---
 title: "Butterflies in the rainforest"
+tbl-cap-location: top
+fig-cap-location: bottom
 ---
 
 ```{r}

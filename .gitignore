@@ -7,3 +7,6 @@
 
 # none of the pdf slides
 slides/*
+
+# don't need to track the docx files. they take up a lot of memory anyways
+*.docx
