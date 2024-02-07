@@ -5,6 +5,7 @@ editor: visual
 format:
   docx: 
     df-print: kable
+    reference-doc: template.docx
   gfm: 
     df-print: kable
 
