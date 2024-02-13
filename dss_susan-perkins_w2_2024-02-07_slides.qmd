@@ -1,0 +1,259 @@
+---
+title: "Week 2: Blood parasites in New World vultures"
+tbl-cap-location: top
+fig-cap-location: bottom
+bibliography: references-w2-perkins.bib
+format: 
+  revealjs:
+    slide-number: true
+    footer: "DSS Week 2: Dr. Susan Perkins"
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(sf)
+library(rnaturalearth)
+library(ggspatial)
+
+theme_set(theme_bw())
+```
+
+## Lab outline
+
+-   Pre-lab survey
+
+-   Weekly feedback surveys
+
+-   Speaker questions
+
+-   Components of a research project
+
+-   Lab worksheet overview
+
+-   Excel exercise
+
+## Pre-lab survey
+
+Take 10 minutes to complete the pre-lab survey on Blackboard
+
+::: notes
+This will help me get to know your needs as a class and will help me assess your progress when I send out the post-lab survey at the end of the semester. I'm only tracking your EMPLID so I can pair the pre-lab with the post-lab surveys, but I do provide you with an option to permit me to look up your name in case you would like me to link your answers with your name.
+:::
+
+## Weekly feedback and speaker Qs
+
+-   Your ticket out of lab is to complete the [weekly feedback survey](https://forms.gle/JJfGv2finZcfs3Ur6)
+-   [Speaker questions](https://forms.gle/xkAeBaFmLnihyDLa6) are worth 1 extra point
+
+::: notes
+Weekly feedback is only 1 required question and optional comments. I only ask for your name to make sure you completed it, but I don't look at names when I review the feedback.
+
+Speaker questions can be added before or during the lecture.
+:::
+
+## Research project components
+
+[How to design a scientific research project- Dr. Callie Chappell](https://www.calliechappell.com/blog/project-design)
+
+## Research project components
+
+![](images/clipboard-2088741712.png){fig-alt="Flow chart of research project. Source: https://www.calliechappell.com/blog/project-design"}
+
+## Research project components
+
+-   The Idea
+
+-   Develop a specific question
+
+-   Define a specific, testable hypothesis
+
+-   Design the experiment
+
+-   Analyze the results
+
+-   Develop a story
+
+-   Present the work
+
+::: notes
+We will be diving into each of these components more throughout the semester. Today will serve as a broad overview and get you thinking about what makes a quality research project.
+:::
+
+## The Idea
+
+-   What is an interesting question?
+
+-   Review the literature
+
+-   Identify "the gap"
+
+::: notes
+Interesting question- you want to choose a question that the answer to will advance the scientific communities' knowledge about something interesting. This might be something with real-world applications (such as an advance in technology or medicine) or a fundamental fact about the world that will help us interpret other data or observations.
+
+The gap can come in two parts- Large or small
+
+Large- At what time scale does evolution work? What genes underly adaptation to climate change?
+
+Small- Can fruit flies adapt to a change in their environment on a short time scale? Does turning on this thermoregulation gene affect the survival of desert pocket mice?
+
+The large gap that I consider for my research is that we don't know how populations, species, and communities have responded to climate change in the past.
+
+The small gap varies based on the project, but the current small gap I'm addressing is "we don't know whether montane lizards may be more or less able to survive climate change compared to lowland lizards"
+:::
+
+## Develop a specific question
+
+-   What system can I answer this question with?
+
+-   Is there technology that can help me answer this question?
+
+-   Are there colleagues interested in collaborating?
+
+-   Do other people find this interesting?
+
+::: notes
+To move from the "big idea" to a specific question, you need to get a gauge for how feasible the question is to answer and if you're the only one who finds the question interesting.
+
+If you're stuck, ask around! Talk over ideas with colleagues and more senior scientists- although they may seem intimidating, scientists are always happy to talk about research, no matter what the level.
+
+Read a review paper to see what experts in the field are interested in.
+
+Think outside the box- use constraints and ideas from other fields
+:::
+
+## Define a specific, testable hypothesis
+
+-    Phrase it as an if, then statement. If X is true, then I expect Y.
+
+-    Include a hypothesized direction of change
+
+> *e.g.* "If the theory of gravity is true, then I expect all released bowling balls to drop down instead of float up"
+
+![](images/clipboard-490445301.png){fig-align="center"}
+
+## Hypotheses can evolve
+
+![](images/clipboard-2177333594.png)
+
+::: notes
+Hypotheses can evolve with the experimental design
+:::
+
+## Design the experiment
+
+-   What data do I need to collect?
+
+-   What treatment groups and controls do I need?
+
+-   Is it feasible to conduct?
+
+-   What statistical analyses are appropriate?
+
+*Dependent* variable versus *independent* variables
+
+::: notes
+To assess feasibility, ask other people who have conducted similar experiments or conduct a pilot study.
+:::
+
+## Dependent variable
+
+This variable responds to a change in another variable.
+
+> *e.g.* For the hypothesis "If lizards are sensitive to warming temperatures, then I expect lizards to be less abundant in areas that have experienced warming than those that have remained stable", the dependent variable could be lizard abundance.
+
+![](images/clipboard-2170403694.png){fig-align="center"}
+
+::: notes
+It's the variable you're interested in describing
+:::
+
+## Independent variable
+
+This variable isn't impacted by the other variables you are measuring. You want to know if it influences the dependent variable.
+
+> e.g. An independent variable for the previous hypothesis would be the environment of the locations where the lizards are sampled- warming or stable
+
+::: notes
+There can be more than one independent variable
+:::
+
+## Analyze the results
+
+-   Always visualize first!
+
+-   Perform the stats you planned second
+
+-   Initial analysis may lead you somewhere unexpected
+
+```{r}
+#| label: example-plot
+data(mtcars)
+ggplot(mtcars, aes(x = hp, y = mpg)) +
+  geom_point() + 
+  geom_smooth(method = "lm") +
+  labs(x = "Temperature change (C°) * 100", y = "Lizard abundance") + 
+  theme(axis.title = element_text(size = 20))
+```
+
+::: notes
+Get a feel for your data. How is it distributed? How much variance is in your data? Does your data have any trends in it or anything unusual that you didn’t realize about your experimental design that is influencing your results. You may notice an error in your data collection method or something else unusual by doing a quick exploration of the data.
+
+Don't shoehorn your analyses to fit your preconceived ideas. Be open to the possibility that you may have thought wrong or there are other, more interesting paths to go down.
+:::
+
+## Develop a story
+
+-   What is the theme of your research?
+
+-   How does every component fit around this theme?
+
+-   Most ambiguous part of the process
+
+::: notes
+Getting a feel for how to craft a story comes from watching scientists giving talks and writing papers. The Introduction, Methods, Results, and Discussion should all serve the theme of your work.
+:::
+
+## Present your work
+
+-   Poster, talk, manuscript
+
+-   Posters or talks usually come before a manuscript
+
+-   Will dive more into this later
+
+::: notes
+Posters and talks are great ways to facilitate getting feedback from the community. At this point, the study and story are still malleable, with solid feedback taking a project from good to great
+:::
+
+## Lab worksheet overview
+
+![](images/clipboard-3969382717.png)
+
+## Excel exercise overview
+
+-   Navigating an Excel sheet
+
+-   Selecting data
+
+-   Filling data
+
+-   Assignment
+
+## Notation
+
+`shift + ➡️`
+
+-   press shift and the right arrow at the same time
+
+`ctrl/cmd`
+
+-   press `ctrl` if you have a Windows computer or `cmd` if you have a Mac
+
+## To-Do
+
+-   Upload lab worksheet and Excel spreadsheet to Blackboard before the next lab (01/14)
+
+-   Weekly lab survey is your ticket out
+
+-   Next week, no speaker- project overview!
