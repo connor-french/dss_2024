@@ -1,0 +1,144 @@
+---
+title: "Week 3: Excel functions and project overview"
+tbl-cap-location: top
+fig-cap-location: bottom
+format: 
+  revealjs:
+    slide-number: true
+    footer: "DSS Week 3: Excel functions and project overview"
+---
+
+```{r}
+#| label: setup
+
+```
+
+## Lab outline
+
+-   Excel exercise
+
+-   Group project overview
+
+-   Group assignments
+
+-   To-do for next week
+
+## Excel Formulas
+
+-   Allow you to perform calculations
+
+-   Can create new columns with those calculations
+
+-   Arithmetic, string manipulation, complex stats
+
+-   Functions make the possibilities almost endless
+
+::: notes
+Formulas are a fundamental and powerful feature in Excel. They allow you to perform calculations with data and create new columns based on those calculations. You can perform everything from basic arithmetic to string manipulation (i.e. manipulating characters, words, sentences, etc.) to complex statistical analyses using functions.
+:::
+
+## Excel demonstration
+
+I'll demonstrate the basics of how to write a function and two basic functions- `SUM` and `AVERAGE`
+
+## Time to practice
+
+15 minutes to get started on the Excel exercises
+
+::: notes
+You'll have time at the end of the lab to finish
+:::
+
+## Group projects
+
+-   Ask your own questions
+
+-   Design your own study
+
+-   Collect your own data
+
+-   Complete your own analysis
+
+-   20 minute presentation (17 min with 3 min questions)
+
+## Project components
+
+More detail is available on Blackboard
+
+-   Question
+
+-   Hypothesis
+
+-   Experimental/Study Design
+
+-   Data Collection
+
+-   Data Analysis
+
+-   Interpreting Results
+
+::: notes
+You will have guidance through the whole process and you will have portions due each week so you're not rushing to finish everything at the end.
+
+The parts that are due will be part of your weekly lab worksheet- worth 1-2 points of the week's grade where something is due
+
+next week you will start thinking of potential questions and hypotheses.
+:::
+
+## Presentations
+
+-   max 17 minutes with 3 minutes for questions
+
+-   needs to contain Intro/background, methods, results, and discussion/conclusions
+
+-   Each member needs to contribute roughly equally
+
+::: notes
+You don't need to use all of the time, but you should allow enough time to tell your stories
+:::
+
+## Rules
+
+In case you're eager to get thinking about project ideas, here are a few guidelines
+
+1.  The question must be biological
+2.  No vertebrates if you're manipulating organisms
+3.  Get permission for private spaces or extraction
+4.  No venomous or poisonous animals or plants
+5.  At least 5 successful observations per treatment
+
+## Working in groups
+
+-   Group members will have different strengths and weaknesses
+
+-   Figure out effective workload splitting
+
+-   Everyone evaluates work before turning in
+
+-   Practice conflict resolution within groups
+
+::: notes
+Every person in the group will have different strengths and weaknesses when it comes toperforming research. It is in your group’s best interest to be open and honest with theseearlier rather than later so you can most effectively structure the work load for each member.Some example group work structures might look like:•A single group leader who delegates responsibilities each week•A different group member is responsible for that week’s assignment•Every group member completes the portion of the responsibilities that best fits theirstrengths each week
+:::
+
+## Group assignments
+
+-   3 people per group
+
+-   Group assignments are on Blackboard
+
+-   Get your group members' contact info and start planning regular meetings
+
+::: notes
+I will put them up here too
+:::
+
+## To-Do
+
+-   Upload lab worksheet and Excel spreadsheet to Blackboard before the next lab (02/21)
+
+-   Coordinate with group members
+
+-   [Weekly lab survey](https://forms.gle/LPjdpEevWHdNmiE78) is your ticket out
+
+-   [Speaker questions](https://forms.gle/j9SuMgnH9Tor6KNP6) before the end of class on Monday
