@@ -1,0 +1,236 @@
+---
+title: "Week 7: Regulation of cone photoreceptor development"
+title-slide-attributes: 
+  data-background-image: na
+tbl-cap-location: top
+fig-cap-location: bottom
+format: 
+  revealjs:
+    slide-number: true
+    footer: "DSS Week 7: Dr. Mark Emerson"
+---
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+theme_set(theme_bw())
+theme_update(axis.title = element_text(size = 20),
+    title = element_text(size = 20),
+    axis.text = element_text(size = 15))
+
+```
+
+## Lab outline
+
+-   Project question feedback
+
+-   Experimental design drafts
+
+-   Data visualization
+
+-   Making graphs in Excel
+
+-   To-do for next week
+
+::: notes
+Talk about hypothesis directionality- after there needs to be a statement of an expectation and one treatment/group should be different from the other. Noticed a lot of hypotheses from week 4 not adhere to this. Also- even if you got all of your points on your homework, look at your feedback. I still give feedback even if you get points off.
+
+Also, I allow collaboration on the worksheets, but direct copying is not allowed. Especially for questions where you need to interpret data- if you're not thinking through these questions yourself, you're not learning. Definitely brainstorm and ask questions with your classmates if you're confused, but you need to answer the question your own way.
+:::
+
+## Project question feedback
+
+-   Groups who reported their questions last week get dibs
+
+-   After the presentation, I will collect group responses
+
+-   I will talk with groups about their choices
+
+## Experimental design drafts
+
+You need to report:
+
+1.  Your question
+2.  Your hypothesis
+3.  Your treatment groups and number of expected replicates per group
+4.  Your control group (if conducting an experiment)
+5.  Your study location(s)
+6.  Time frame for data collection
+
+## Data Visualization
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+
+```
+
+## Histogram
+
+::: columns
+::: {.column width="40%"}
+-   Single, continuous variable
+
+-   Measurements like height, weight, temperature, etc.
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: histogram
+
+set.seed(19834)
+d <- tibble(
+  height = rnorm(100, mean = 69.1, sd = 3)
+)
+
+ggplot(d, aes(x = height)) +
+  geom_histogram(bins = 15) +
+  labs(x = "Height (in)", y = "Count",
+       title = "Height of a sample of 100 American Men")
+
+```
+:::
+:::
+
+::: notes
+The histogram is designed to visualize a single, continuous variable. A **continuous variable** is obtained through *measurements* and can be any real number within a range. Things like height, weight, temperature, speed, etc. are all continuous variables. In a histogram, the height of the bars indicate the number of observations within a particular range. The width of the bin reflects the range of values within it and can significantly impact how you interpret the plot! There is no hard and fast rule to creating or interpreting them, other than to try to show the distribution of the data as accurately as possible and to always critically assess whether the plot is properly representing the data.
+:::
+
+## Scatterplot
+
+::: columns
+::: {.column width="40%"}
+-   Two continuous variables
+
+-   x-axis (horizontal) is a dependent variable
+
+-   y-axis (vertical) is an independent variable
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: scatterplot
+
+set.seed(1999)
+
+s <- tibble(
+  daily_water_amount = rnorm(50, mean = 200, sd = 10),
+  noise = rnorm(50, mean = 0.02, sd = 0.001),
+  plant_height = daily_water_amount * noise
+)
+
+ggplot(s, aes(x = daily_water_amount, y = plant_height)) +
+  geom_point() +
+  labs(x = "Daily water amount (mL)", y = "Growth over study period (cm)",
+       title = "Influence of daily watering amount on potted plant growth")
+
+```
+:::
+:::
+
+::: notes
+A scatterplot is designed to visualize the relationship between two continuous variables. Typically, the variable on the x-axis (horizontal axis) is an independent variable, while the variable on the y-axis is a dependent variable, although this doesn't have to be the case. These can give you a quick idea of whether two variables are correlated and what sort of pattern their relationship follows (linear or non-linear).
+:::
+
+## Box and whisker plot
+
+::: columns
+::: {.column width="40%"}
+-   Grouped continuous variable
+
+-   Groups are usually treatments you want to compare
+
+-   Can have groups on x-axis and continuous variable on y-axis, or the other way around
+:::
+
+::: {.column width="60%"}
+![](images/clipboard-1926666754.png)
+:::
+:::
+
+::: notes
+These are also known simply as "boxplots". They are useful for comparing the distributions of groups of continuous variables. These are especially relevant in experiments when you are comparing multiple treatment groups. You can get a quick idea about if the middle or the range of values between different groups are different from each other.
+
+This gives you an idea about the distribution of variables without plotting every single data point. The median represents the middle, the IQR represents where half of the values are distributed, while the upper and lower whiskers represent extremes. Anything beyond the range of the whiskers is considered an outlier.
+:::
+
+## Box and whisker plot
+
+```{r}
+#| label: boxplot
+set.seed(31394)
+
+male_el <- rnorm(100, mean = 11000, sd = 1300)
+
+female_el <- rnorm(100, mean = 6100, sd = 1400)
+
+el_weight <- tibble(
+  weight = c(male_el, female_el),
+  sex = c(rep("Male", 100), rep("Female", 100))
+)
+
+ggplot(el_weight, aes(x = sex, y = weight)) +
+  geom_boxplot(width = 0.4) +
+  labs(x = "Sex", y = "Weight (lbs)", title = "Weight of African Savanna Elephants")
+
+
+```
+
+## Bar plot
+
+::: columns
+::: {.column width="40%"}
+-   Discrete numerical or categorical variable
+
+-   x-axis is discrete/categorical variable, y-axis is counts
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: barplot
+
+dog_coat <- tibble(
+  color = c("Brindle", "White", "Black", "Brown", "Sable"),
+  col_count = c(5, 12, 30, 50, 20)
+)
+
+
+ggplot(dog_coat, aes(x = color, y = col_count)) +
+  geom_col() +
+  labs(x = "Coat color", y = "Count",
+       title = "Dog coat colors observed at the dog park") 
+
+
+```
+:::
+:::
+
+::: notes
+Bar plots are used to compare counts of **discrete** or **categorical** variables. Discrete variables are real numbers that can only take on certain values, while categorical variables are non-numeric groups. Both can be counted.
+:::
+
+## Making graphs in Excel {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+## Live demo
+
+1.  Select the data you would like to plot
+2.  Insert \> Select chart
+3.  Adjust/customize chart
+
+## To-do
+
+-   Upload Lab Worksheet and Excel spreadsheet to Blackboard by next lab (03/13)
+
+-   Have your draft experimental design ready for next lab
+
+-   [Weekly lab survey](https://forms.gle/LPjdpEevWHdNmiE78) is your ticket out
+
+-   [Speaker questions](https://forms.gle/j9SuMgnH9Tor6KNP6) before the end of class on Monday

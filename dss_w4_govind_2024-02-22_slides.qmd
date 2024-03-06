@@ -1,0 +1,253 @@
+---
+title: "Week 4: Fruit flies in space"
+include-in-header:
+  - text: |
+      <style>
+      #title-slide .title {
+        color: #ffffff;
+      }
+      </style>
+title-slide-attributes:
+  data-background-image: /images/fruit-fly-space.png
+tbl-cap-location: top
+fig-cap-location: bottom
+format: 
+  revealjs:
+    slide-number: true
+    footer: "DSS Week 4: Dr. Shubha Govind"
+---
+
+```{r}
+#| label: setup
+
+```
+
+## Lab outline
+
+-   Data cleaning in Excel
+
+-   Choosing a good question
+
+-   Literature review
+
+-   To-do for next week
+
+## Before we begin
+
+-   If there is a speaker whose research you're interested in, reach out!
+
+-   [Natural Areas Conservancy Internships](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=041b3c38-3c62-4c66-97d0-c604ec5e0b27&ccId=19000101_000001&lang=en_US) (paid)
+
+## Data cleaning in Excel {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+## Create custom dictionaries
+
+-   Data dictionaries help others, including future you, understand any codes, words, and abbreviations used during data collection
+
+-   [Custom spell check dictionaries](https://support.microsoft.com/en-us/office/add-or-edit-words-in-a-spell-check-dictionary-56e5c373-29f8-4d11-baf6-87151725c0dc#ID0EBDD=Windows) help you prepare data for analysis
+
+-   I will demonstrate how to create one for yourself!
+
+::: notes
+Besides making sure the data are understood, data dictionaries help when it comes time for data analysis.
+
+A way to correct for data entry errors in Excel is through the use of a custom spell check dictionary.
+
+Each operating system (i.e. Windows, Mac, or online) uses spell check dictionaries a little differently. I will demonstrate how to create a custom dictionary on a Mac.
+
+After creating your custom dictionary, you can [check your spelling in Excel following these instructions](https://support.microsoft.com/en-us/office/check-spelling-in-a-worksheet-185efb8d-ee3f-4511-b7ef-35599c924159#ID0EHBF=Windows).
+:::
+
+## Text to columns
+
+| Date             |
+|------------------|
+| February 15 2024 |
+| February 16 2024 |
+| February 17 2024 |
+
+::: notes
+In the field or in the lab, data entry often has to be performed quickly. This leads to data recording methods that are designed for easy entry, rather than easy analysis. A very common way to save time during data entry is to enter multiple pieces of information in a single data cell. However, for analysis you will need to split the pieces of information into their own cells. For instance, dates are often entered into a single cell:
+:::
+
+## Text to columns
+
+| Day | Month    | Year |
+|-----|----------|------|
+| 15  | February | 2024 |
+| 16  | February | 2024 |
+| 17  | February | 2024 |
+
+::: notes
+However, for an analysis, you may be interested in splitting the `Date` column into three columns- the day, month, and year- to facilitate analyzing the data at different time scales.
+:::
+
+## Text to columns
+
+-   To split a single column into multiple columns, [you can use the `Text to Columns` feature](https://support.microsoft.com/en-us/office/split-text-into-different-columns-with-the-convert-text-to-columns-wizard-30b14928-5550-41f5-97ca-7a3e9c363ed7).
+
+-   I will demonstrate this here!
+
+## 15 minutes for worksheets {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+## Choosing a good question for lab projects {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+## Components of a good question
+
+-   Addresses a "big idea"
+
+-   Specific
+
+-   Something you find interesting
+
+-   Feasible
+
+::: notes
+Should be specific to your project and address a “big idea” identified from the literature. For instance, a “big idea” in the literature is that we don’t know whether adaptations are driven by one or a few genes that have a large effect, or many small genes that have a small effect. Since my chosen study system is frogs and I focus on the tropics, a specific question could be “Is the body wax adaptation in waxy monkey tree frogs (genus Phyllomedusa) driven by a few large effect genes or many small effect genes?”. This question is specific to an adaptation (body wax) and a system (waxy monkey tree frogs). Additionally, this question can lead to a few suitable hypotheses, outlined below.
+
+While we have discussed finding a gap in the literature to frame your question by, you do not have the time or experience yet to do this in the lab. Rather, when coming up with your big idea and subsequent question, think of what interests you and what would be feasible to address in the span of a semester. The object here is to gain experience asking a quality question within the limits of a course- you don’t need to perform ground-breaking science.
+
+I'll go over some general starting points to help you get started.
+:::
+
+## Organisms
+
+::: columns
+::: {.column width="40%"}
+-   Easy to observe or manipulate
+
+-   Abundant
+
+-   Squirrels, pigeons, ants, rats, birds, insects, trees, plants, etc
+:::
+
+::: {.column width="60%"}
+![](images/clipboard-3941983154.png)
+:::
+:::
+
+## Topics
+
+::: columns
+::: {.column width="40%"}
+-   Behavior
+
+-   Environmental influence on growth
+
+-   Habitat preference
+
+-   Influence of humans
+
+-   These are just some ideas!
+:::
+
+::: {.column width="60%"}
+![![](images/clipboard-1769918093.png)](images/clipboard-725484480.png){width="5cm"}
+:::
+:::
+
+## Feasibility
+
+-   Who's going to collect the data?
+
+-   When/where are you going to collect the data?
+
+-   What resources do you need?
+
+-   How long will data collection take?
+
+-   What are other considerations that might impact data collection?
+
+::: notes
+Questions to ask to assess feasibility
+:::
+
+## Literature review
+
+![](images/clipboard-270174996.png)
+
+## Where to find papers
+
+![](images/clipboard-2180141250.png)
+
+![](images/clipboard-691955104.png){.center}
+
+::: footer
+<https://library.ccny.cuny.edu/>
+:::
+
+::: notes
+I will use google scholar as for our examples
+:::
+
+## Search strategy
+
+![](images/clipboard-4109510503.png)
+
+::: notes
+Wikipedia is great, but not a source
+
+Books are also a great place to start, but are not primary literature
+:::
+
+## Primary literature
+
+![](images/clipboard-359009574.png)
+
+![](images/clipboard-1609371665.png)
+
+::: notes
+Primary literature is authored by researchers, contains original research data, and is usually published in a peer-reviewed journal.
+:::
+
+## Saving what you find
+
+![](images/gschol-treefrog-01.png)
+
+::: footer
+PDF resources: [CCNY Library](https://library.ccny.cuny.edu/), [Anna's Archive](https://annas-archive.org/)
+:::
+
+::: notes
+I'll show you how to save papers
+:::
+
+## Citations and Bibliography
+
+![](images/gschol-cite.png){width="20cm"}
+
+![](images/clipboard-1412660454.png){width="9.1cm"}
+
+In text:
+
+(Endlein et al. 2017)
+
+## To-do
+
+-   Upload Lab Worksheet and Excel spreadsheet to Blackboard by next lab (02/28)
+
+-   Have 2-5 potential research questions prepared for the next lab
+
+    -   At least 1 citation relevant to each question
+
+-   [Weekly lab survey](https://forms.gle/LPjdpEevWHdNmiE78) is your ticket out
+
+-   [Speaker questions](https://forms.gle/j9SuMgnH9Tor6KNP6) before the end of class on Monday

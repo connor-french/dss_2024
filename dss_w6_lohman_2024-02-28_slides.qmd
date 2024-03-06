@@ -1,0 +1,157 @@
+---
+title: "Week 6: Butterflies in the rainforest"
+title-slide-attributes: 
+  data-background-image: /images/butterfly-background.png
+tbl-cap-location: top
+fig-cap-location: bottom
+format: 
+  revealjs:
+    slide-number: true
+    footer: "DSS Week 6: Dr. David Lohman"
+---
+
+```{r}
+#| label: setup
+
+```
+
+## Lab outline
+
+-   Experimental design
+
+-   Sorting and concatenating data in Excel
+
+-   Finalize questions
+
+-   To-do for next week
+
+## Experimental design {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+## Types of studies
+
+::: columns
+::: {.column width="50%"}
+-   Observational study
+
+    ![](images/clipboard-287735933.png){width="6cm"}
+:::
+
+::: {.column width="50%"}
+-   Experiment
+
+![](images/clipboard-1979953455.png){width="14.1cm"}
+:::
+:::
+
+::: notes
+An observational study does not involve directly manipulating the treatments, while an experiment involves systematically manipulating one or more treatments.
+
+You generally have more control over an experiment- you get to control the environment as much or as little as you want or have the resources to. You have less control over an observational study, but some phenomena are incredibly difficult to control or gather the resources for.
+:::
+
+## Considerations
+
+-   What are your treatment groups?
+
+Observational study: habitat patches, time of day, environmental conditions, location, etc.
+
+Experiment: soil type, food nutrients, environmental conditions, etc.
+
+![](images/clipboard-3093594183.png)
+
+## Considerations
+
+-   What are your treatment groups?
+
+-   What, if any, are your controls?
+
+Observational studies generally do not have controls.
+
+Experiments- these don't receive the treatment.
+
+-   e.g. no music, no wind, normal diet, etc.
+
+![](images/clipboard-3823711410.png)
+
+## Answering your hypothesis
+
+When choosing treatments, think about what comparisons will answer your hypothesis.
+
+> Hypothesis: I think plants grow faster with jazz versus heavy metal
+>
+> Treatments: jazz, heavy metal, classical, no music
+
+![](images/clipboard-4167283015.png){fig-align="center"}
+
+::: notes
+Comparing jazz or heavy metal with classical music won't answer your hypothesis, although classical may be useful to use as a second control group.
+:::
+
+## Statistics
+
+They're important to think about, but we'll get to them next week.
+
+## Logistics
+
+-   Who's going to collect the data?
+
+-   When/where are you going to collect the data?
+
+-   What resources do you need?
+
+-   How long will data collection take?
+
+-   What are other considerations that might impact data collection?
+
+## Sorting and concatenating data in Excel {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+
+```
+
+## Sorting data
+
+![](images/clipboard-4272294374.png)
+
+::: notes
+Often your data has an order to it, whether it is alphabetical, date-time, or numerical. You may want to know the minimum or maximum values in your data set, or know how other variables are structured according to your ordered variable- for instance, you can get a quick look to see if the weather has gotten warmer over time by taking a data set with dates and temperature and ordering it according to the date! Although the best way to get these kinds of insights is through data visualization, which we will explore next week, ordering your data is a great first pass.
+:::
+
+## Concatenating data
+
+![](images/clipboard-3668266633.png)
+
+::: notes
+This is the opposite of what you learned last week- Text to Column. Concatenating involves taking two cells or columns and joining them in a new column using the `CONCAT()` function in Excel. This is often useful when you want to create unique IDs for your observations.
+:::
+
+## Finalize questions
+
+-   You have time to discuss your ideas with me today
+
+-   First come first serve
+
+-   Write question ideas on the worksheet, Q8
+
+::: notes
+If you talk to me and I approve your question, then it's yours. Otherwise, I will evaluate everyone's questions based on what is on your worksheet. If there is overlap, I'll choose either randomly or based on what your alternative questions are. I'll assume the questions you add to the worksheet are in order of preference.
+:::
+
+## To-do
+
+-   Upload Lab Worksheet and Excel spreadsheet to Blackboard by next lab (03/06)
+
+-   Have your finalized research question ready for next lab
+
+-   [Weekly lab survey](https://forms.gle/LPjdpEevWHdNmiE78) is your ticket out
+
+-   [Speaker questions](https://forms.gle/j9SuMgnH9Tor6KNP6) before the end of class on Monday
