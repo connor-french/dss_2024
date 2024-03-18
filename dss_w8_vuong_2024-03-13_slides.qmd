@@ -1,0 +1,95 @@
+---
+title: "Week 8: Mechanisms of antibody production"
+title-slide-attributes: 
+  data-background-image: na
+tbl-cap-location: top
+fig-cap-location: bottom
+format: 
+  revealjs:
+    slide-number: true
+    footer: "DSS Week 8: Dr. Bao Vuong"
+---
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+theme_set(theme_bw())
+theme_update(axis.title = element_text(size = 20),
+    title = element_text(size = 20),
+    axis.text = element_text(size = 15))
+
+```
+
+## Lab outline
+
+-   Filtering data in Excel
+
+-   Worksheet overview
+
+-   Experimental design feedback
+
+-   To-do for next week
+
+::: notes
+I will be recording attendance for the remainder of the semester- I talked with Dr. Lohman and he agrees that we both need to keep track of attendance to make sure we're able to assess the progress of everyone in the class and reach out if people are struggling. I'm not adding a lab attendance grade, but Dave might use lab attendance in his course attendance grade.
+:::
+
+## Filtering data in Excel {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+
+```
+
+## XLOOKUP()
+
+![](images/clipboard-540086498.png)
+
+## XLOOKUP()
+
+![](images/clipboard-540086498.png)
+
+-   What am I trying to find?
+
+-   Where am I trying to find it?
+
+-   What do I want to return when I find it?
+
+-   What do I want to return if I don't find it?
+
+## FILTER
+
+![](images/clipboard-3747129834.png)
+
+## FILTER
+
+![](images/clipboard-3747129834.png)
+
+-   What range of data do you want to filter?
+
+-   What range of values do you want to filter by?
+
+-   What condition do those values need to satisfy?
+
+-   What value do you use if the condition isn't satisfied?
+
+## Experimental design feedback {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+## To-do
+
+-   Upload Lab Worksheet and Excel spreadsheet to Blackboard by next lab (03/20)
+
+-   Start data collection/data collection planning
+
+-   [Weekly lab survey](https://forms.gle/LPjdpEevWHdNmiE78) is your ticket out
+
+-   [Speaker questions](https://forms.gle/j9SuMgnH9Tor6KNP6) before the end of class on Monday

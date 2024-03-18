@@ -34,6 +34,8 @@ theme_update(axis.title = element_text(size = 20),
 -   To-do for next week
 
 ::: notes
+Note about submitting questions- can submit them the same day as the presentation.
+
 Talk about hypothesis directionality- after there needs to be a statement of an expectation and one treatment/group should be different from the other. Noticed a lot of hypotheses from week 4 not adhere to this. Also- even if you got all of your points on your homework, look at your feedback. I still give feedback even if you get points off.
 
 Also, I allow collaboration on the worksheets, but direct copying is not allowed. Especially for questions where you need to interpret data- if you're not thinking through these questions yourself, you're not learning. Definitely brainstorm and ask questions with your classmates if you're confused, but you need to answer the question your own way.
@@ -58,7 +60,7 @@ You need to report:
 5.  Your study location(s)
 6.  Time frame for data collection
 
-## Data Visualization
+## Data Visualization {.center}
 
 ```{css}
 .center h2 {
