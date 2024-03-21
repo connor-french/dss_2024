@@ -1,0 +1,109 @@
+---
+title: "Week 9: Secondary chromosome duplication in bacteria"
+title-slide-attributes: 
+  data-background-image: na
+tbl-cap-location: top
+fig-cap-location: bottom
+format: 
+  revealjs:
+    multiplex: true
+    slide-number: true
+    footer: "DSS Week 9: Dr. David Jeruzalmi"
+---
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+
+```
+
+## Lab outline
+
+-   Group project schedule
+
+-   Group project data collection
+
+-   Pivot tables in Excel
+
+-   Worksheet overview
+
+-   To-do for next week
+
+::: notes
+Make sure to fill out the weekly survey, so I can take attendance.
+:::
+
+## Group project schedule
+
+![](images/clipboard-1490145951.png)
+
+## Project data collection
+
+-   Start now!
+
+-   It always takes longer than you think it will
+
+-   Taking some time to plan will save a lot of time in the long run
+
+## Project data collection
+
+-   How will I quantify my data?
+
+-   What other measurements should I take that may be relevant to my study?
+
+-   How will I structure my data collection spreadsheet?
+
+-   Where will I perform data collection?
+
+-   Do I need permission to access my data collection site?
+
+-   What instruments do I need to collect my data?
+
+## Pivot tables in Excel
+
+A pivot table (called a PivotTable in Excel) is a powerful data analysis tool to summarize large data sets and answer questions about the data.
+
+-   **Simple**- drag-and-drop
+
+-   **Fast**- time-efficient
+
+-   **Flexible**- transform and group data, and perform advanced calculations
+
+::: notes
+A pivot table (called a PivotTable in Excel) is a powerful data analysis tool to summarize large data sets and answer questions about the data. It streamlines the process of selecting, filtering, summarizing, and formatting data into easily interpretable tables and graphs. In short, pivot tables are
+
+-   **Simple:** Pivot tables are easy to create using drag-and-drop tools without the need for complex formulas
+
+-   **Fast:** They are time-efficient and allow for quick rearrangement of data display to meet specific needs
+
+-   **Flexible:** Users can transform columns into rows, group data by any field, and perform advanced calculations easily
+:::
+
+## Create your own PivotTable {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+
+```
+
+## Worksheet overview {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+
+```
+
+##  To-do
+
+-   Upload Lab Worksheet and Excel spreadsheet to Blackboard by next lab (03/27)
+
+-   Start data collection
+
+-   [Weekly lab survey](https://forms.gle/LPjdpEevWHdNmiE78) is your ticket out (and attendance!)
+
+-   [Speaker questions](https://forms.gle/j9SuMgnH9Tor6KNP6) before the end of class on Monday
